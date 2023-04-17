@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="container mt-5">
+  <h1>Retirar dinero de Cuenta de Ahorros</h1>
+  <form [formGroup]="retirar" (ngSubmit)="onRetirar()"class="col-md-4">
+    <div class="form-group">
+      <label for="cuenta">Numero de cuenta:</label>
+      <input type="number" class="form-control" id="cuenta" formControlName="cuenta" placeholder="Numero de cuenta" required>
+    </div>
+    <div class="form-group mb-4">
+      <label for="monto">Valor a retirar:</label>
+      <input type="number" class="form-control" id="monto" formControlName="monto" placeholder="Cantidad a retirar" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Retirar Dinero</button>
+  </form>
+  <div>
+  </div>
+</div>

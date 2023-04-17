@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container  mt-5">
+  <h1>Consultar Saldo</h1>
+    <div class="form-group pb-5">
+      <label for="nombre">Ingresa el numero de cuenta:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Numero de cuenta" [(ngModel)]="cuenta">
+    </div>
+    <button type="button" (click)="consultar_saldo()"  class="btn btn-primary">Consultar</button>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Cuenta</th>
+          <th>Nombre</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">{{cuenta_nueva}}</td>
+          <td>{{nombre}}</td>
+          <td>{{saldo}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Cuenta de Ahorros<br> Inicia Sesion</h2>
+            <p class="pb-5">Accede y administra las cuentas de ahorros</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+              <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                  <div class="form-group">
+                     <label>Usuario</label>
+                     <input type="text" id="login" class="form-control" placeholder="Usuario" formControlName="usuario">
+                  </div>
+                  <div class="form-group pb-3">
+                     <label>Contrasena</label>
+                     <input type="password" id="password" class="form-control" placeholder="Contrasena" formControlName="password">
+                  </div>
+                  <button type="submit" class="btn btn-black m-1">Iniciar Sesion</button>
+               </form>
+            </div>
+         </div>
+      </div>
